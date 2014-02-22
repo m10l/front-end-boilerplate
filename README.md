@@ -8,7 +8,7 @@ Before getting started, make sure you have node.js installed. If you don't you c
 
 If you have node.js, then...
 
-1. Clone this repo `git clone https://github.com/m10l/front-end-boilerplate.git NAMEOFPROJECT`
+1. Clone this repo: `git clone https://github.com/m10l/front-end-boilerplate.git NAMEOFPROJECT`
 2. Install Node.js modules: `npm install`
 3. Install Bower dependencies: `bower install`
 
