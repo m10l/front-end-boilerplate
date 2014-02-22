@@ -1,0 +1,21 @@
+{
+  "name": "innernets-boilerplate",
+  "version": "0.1.0",
+  "authors": [
+    "Mike Mitchell"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.7.1",
+    "jquery": "~2.1.0"
+  }
+}
