@@ -152,7 +152,7 @@ gulp.task( 'watch', function () {
 
 	// Watch for changes to Sass files
 
-	gulp.watch( path.dev.sass + '/*', function(){
+	gulp.watch( path.dev.sass + '/**/*.scss', function(){
 
 		// Compile Sass to CSS
 
