@@ -1,5 +1,5 @@
 /**
- * Innernets Boilerplate Gulpfile v0.1.0
+ * Innernets Boilerplate Gulpfile v0.1.1
  * =====================================
  * By Mike Mitchell | @innernets
  */
