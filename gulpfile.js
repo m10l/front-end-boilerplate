@@ -81,7 +81,7 @@ gulp.task( 'buildClean', function () {
 gulp.task( 'buildStyles', function () {
 
 	return gulp.src( path.dev.sass + '/*.scss' )
-		.pipe( sass() )
+		.pipe( sass({ errLogToConsole: true }) )
 		.pipe( autoprefixer( 'last 2 version' ))
 		.pipe( minifycss() )
 		.pipe( gulp.dest( path.dev.css ))
@@ -157,7 +157,7 @@ gulp.task( 'watch', function () {
 		// Compile Sass to CSS
 
 		gulp.src( path.dev.sass +'/*.scss' )
-			.pipe( sass() )
+			.pipe( sass({ errLogToConsole: true }) )
 			.pipe( gulp.dest( path.dev.css ) )
 		;
 
