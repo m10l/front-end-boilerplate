@@ -1,2 +1,19 @@
+# =========================
+# Ignore OS X Files
+# =========================
+
 .DS_Store
-/node_modules
+.Spotlight-V100
+.Trashes
+
+# =========================
+# Ignore Node Modules
+# =========================
+
+node_modules
+
+# =========================
+# Ignore Bower Dependencies
+# =========================
+
+development/scripts/vendor

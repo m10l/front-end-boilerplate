@@ -1,18 +1,12 @@
 {
-  "name": "innernets-boilerplate",
-  "version": "0.1.1",
-  "authors": [
-    "Mike Mitchell"
-  ],
+  "name": "front-end-boilerplate",
+  "version": "0.2.0",
+  "homepage": "https://github.com/m10l/front-end-boilerplate",
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "app/components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "dependencies": {
     "modernizr": "~2.7.1",
