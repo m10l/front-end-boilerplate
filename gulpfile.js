@@ -13,19 +13,19 @@
  * Load our dependencies
  */
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
+var gulp         = require('gulp');
+var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var minifycss = require('gulp-minify-css');
-var imagemin = require('gulp-imagemin');
-var svgmin = require('gulp-svgmin');
-var uglify = require('gulp-uglify');
-var rev = require('gulp-rev');
-var usemin = require('gulp-usemin');
-var rimraf = require('gulp-rimraf');
-var notify = require('gulp-notify');
-var runSequence = require('run-sequence');
-var liveReload = require('gulp-livereload');
+var minifycss    = require('gulp-minify-css');
+var imagemin     = require('gulp-imagemin');
+var svgmin       = require('gulp-svgmin');
+var uglify       = require('gulp-uglify');
+var rev          = require('gulp-rev');
+var usemin       = require('gulp-usemin');
+var rimraf       = require('gulp-rimraf');
+var notify       = require('gulp-notify');
+var runSequence  = require('run-sequence');
+var liveReload   = require('gulp-livereload');
 
 
 /**
@@ -35,32 +35,32 @@ var liveReload = require('gulp-livereload');
 
 var config = {
 
-	path: {
+	path : {
 
-		build: {
-			root: 'build',
-			css: 'build/css',
-			img: 'build/images',
-			js: 'build/scripts'
+		build : {
+			root : 'build',
+			css  : 'build/css',
+			img  : 'build/images',
+			js   : 'build/scripts'
 		},
 
-		dev: {
-			root: 'development',
-			css: 'development/css',
-			sass: 'development/sass',
-			img: 'development/images',
-			js: 'development/scripts'
+		dev : {
+			root : 'development',
+			css  : 'development/css',
+			sass : 'development/sass',
+			img  : 'development/images',
+			js   : 'development/scripts'
 		}
 
 	},
 
-	message: {
-		sassCompilationComplete: '😻 Compiled Sass to CSS',
-		sassCompilationError: '🙀 Sass Error: ',
-		cssMinificationComplete: '😻 Minified CSS',
-		cssPrefixComplete: '😻 Added CSS Prefixes',
-		imgOptimComplete: '😻 Optimized Raster Images',
-		svgOptimComplete: '😻 Optimized SVG Images'
+	message : {
+		sassCompilationComplete : '😻 Compiled Sass to CSS',
+		sassCompilationError    : '🙀 Sass Error: ',
+		cssMinificationComplete : '😻 Minified CSS',
+		cssPrefixComplete       : '😻 Added CSS Prefixes',
+		imgOptimComplete        : '😻 Optimized Raster Images',
+		svgOptimComplete        : '😻 Optimized SVG Images'
 	}
 
 };
