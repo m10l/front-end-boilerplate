@@ -39,17 +39,17 @@ var config = {
 
 		build : {
 			root : 'build',
-			css  : 'build/css',
-			img  : 'build/images',
-			js   : 'build/scripts'
+			css  : config.path.build.root + '/css',
+			img  : config.path.build.root + '/images',
+			js   : config.path.build.root + '/scripts'
 		},
 
 		dev : {
 			root : 'development',
-			css  : 'development/css',
-			sass : 'development/sass',
-			img  : 'development/images',
-			js   : 'development/scripts'
+			css  : config.path.dev.root + '/css',
+			sass : config.path.dev.root + '/sass',
+			img  : config.path.dev.root + '/images',
+			js   : config.path.dev.root + '/scripts'
 		}
 
 	},
