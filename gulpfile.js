@@ -151,40 +151,6 @@ gulp.task( 'optimizeSvg', function () {
 });
 
 
-gulp.task( 'prefixCSS', function () {
-
-	/**
-	 * Gulp Task
-	 * =========
-	 * Add vendor prefixes to CSS in build directory
-	 */
-
-	return gulp.src( './' + config.path.build.css + '/style.css' )
-		.pipe( autoprefixer( 'last 2 version', 'ie 7', 'ie 8', 'ie 9' ))
-		.pipe( gulp.dest( './' + config.path.build.css ))
-		.pipe( notify( config.message.cssPrefixComplete ) )
-	;
-
-});
-
-
-gulp.task( 'minifyCSS', function () {
-
-	/**
-	 * Gulp Task
-	 * =========
-	 * Minify CSS in build directory
-	 */
-
-	return gulp.src( './' + config.path.build.css + '/style.css' )
-		.pipe( minifycss() )
-		.pipe( gulp.dest( './' + config.path.build.css ) )
-		.pipe( notify( config.message.cssMinificationComplete ) )
-	;
-
-});
-
-
 gulp.task( 'buildUsemin', function () {
 
 	/**
@@ -197,7 +163,7 @@ gulp.task( 'buildUsemin', function () {
 		.pipe( usemin({
 			html: [],
 			js: [ uglify(), rev() ],
-			css: [ rev() ]
+			css: [ autoprefixer( 'last 2 version', 'ie 7', 'ie 8', 'ie 9' ), minifycss(), rev() ]
 		}))
 		.pipe( gulp.dest( config.path.build.root ))
 	;
@@ -254,6 +220,6 @@ gulp.task( 'build', function () {
 	 * Build All The Things
 	 */
 
-	runSequence( 'buildClean', 'buildCopy', 'compileSass', 'prefixCSS', 'minifyCSS', [ 'optimizeImages', 'optimizeSvg' ], 'buildUsemin' );
+	runSequence( 'buildClean', 'buildCopy', 'compileSass', [ 'optimizeImages', 'optimizeSvg' ], 'buildUsemin' );
 
 });
