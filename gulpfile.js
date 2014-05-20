@@ -1,6 +1,6 @@
 /**
  * ======================================
- * Front End Boilerplate Gulp File v0.2.0
+ * Front End Boilerplate Gulp File v0.3.0
  * ======================================
  */
 
