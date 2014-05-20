@@ -13,13 +13,13 @@ Things you need to already have set up
 
 ## Setting up
 
-1. Clone / pull/ grab this repo `git init && git pull https://github.com/m10l/front-end-boilerplate.git`
+1. Clone / pull / grab this repo `git init && git pull https://github.com/m10l/front-end-boilerplate.git`
 2. Install Node.js modules `npm install`
 3. Install Bower dependencies `bower install`
 
 ##  Working
 
-1. Run Gulp.js file watcher task `gulp`, or run `npm start` to watch files and spin up a simple development server ([httpster](http://simbco.github.io/httpster/))
+1. Run Gulp.js file watcher task `gulp`, or run `npm start` to watch files and spin up a simple server ([httpster](http://simbco.github.io/httpster/))
 2. Work on files in the development directory. Sass changes will be automatically compiled to CSS
 
 If you want to add in any additional JavaScript files to the project, add them into the `<!-- build:js scripts/scripts.js -->` block in `index.html`
