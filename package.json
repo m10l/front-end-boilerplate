@@ -1,12 +1,15 @@
 {
   "name": "front-end-boilerplate",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "keywords": [
     "boilerplate",
     "sass",
     "gulp",
     "h5bp"
   ],
+  "scripts": {
+    "start": "gulp & open http://localhost:3333 & httpster -d development/"
+  },
   "author":  "Mike Mitchell",
   "license": "MIT",
   "devDependencies": {
